@@ -62,13 +62,11 @@ read_api_config <- function(which_api) {
     stop(paste("One or more parameter in", which_api, "is missing."))
   }
   
-  endpoint = with(d[[which_api]], paste0(host, ":", port, "/", swagger))
-  
-  
-  
-  # return 
-  
-  endpoint
+  # return a list of token and endpoint
+  list(
+    token = d[[which_api]][["token"]],
+    endpoint = with(d[[which_api]], paste0(host, ":", port, "/", swagger))
+  )
 }
 
 
