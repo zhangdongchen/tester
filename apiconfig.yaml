@@ -1,0 +1,12 @@
+---
+fengkong_accurate_evaluation:
+    token: some secret
+    host: 127.0.0.1
+    port: 6666
+    swagger: fengkong_accurate_evaluation
+
+Validator:
+    host: 127.0.0.1
+    port: 8899
+    swagger: trigger
+...
